@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "0.1.0"
+define config.version = "0.1.1"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -44,7 +44,7 @@ Obrigado por jogar.""")
 define build.name = "PontoMorto"
 
 ## Change the version used by the build system.
-define build.version = "0.1.0"
+define build.version = "0.1.1"
 
 ## Sounds and music ############################################################
 
