@@ -9,3 +9,11 @@ log.txt
 traceback.txt
 errors.txt
 traceback.txt.*
+
+# Android: keystores de assinatura (segredo, NUNCA commitar)
+*.keystore
+
+# Saída de build (APK/AAB) — não versionar
+/dist/
+*.apk
+*.aab

@@ -52,21 +52,31 @@ Ou abra o **launcher** do Ren'Py e selecione a pasta do projeto.
 
 ```
 ponto-morto/
-├─ game/
-│  ├─ script.rpy        # história, diálogos e escolhas
-│  ├─ definitions.rpy   # imagens e personagens
-│  ├─ options.rpy       # configurações do projeto
-│  ├─ screens.rpy       # interface (menus, HUD)
-│  ├─ images/           # fundos e sprites
-│  ├─ audio/            # trilha e efeitos (sintetizados)
+├─ game/                        # projeto Ren'Py (código, arte, áudio)
+│  ├─ script.rpy                # história, diálogos e escolhas
+│  ├─ definitions.rpy           # imagens e personagens
+│  ├─ options.rpy               # configurações do projeto
+│  ├─ screens.rpy               # interface (menus, HUD)
+│  ├─ images/                   # fundos e sprites
+│  ├─ audio/                    # trilha e efeitos (sintetizados)
 │  └─ fonts/
-├─ tools/
-│  ├─ gen_images.py     # gera fundos, sprites e ícones
-│  └─ gen_audio.py      # gera a trilha e os efeitos
-├─ android-icon_foreground.png   # ícone adaptativo (frente, transparente)
-├─ android-icon_background.png   # ícone adaptativo (fundo, opaco)
-└─ android-presplash.jpg         # tela de carregamento
+├─ tools/                       # geradores procedurais
+│  ├─ gen_images.py             # fundos, sprites, ícones e presplash
+│  └─ gen_audio.py              # trilha e efeitos
+├─ android.json                 # configuração do app Android (RAPT)
+├─ android-icon_foreground.png  # ícone adaptativo (frente, transparente)
+├─ android-icon_background.png  # ícone adaptativo (fundo, opaco)
+├─ android-presplash.jpg        # tela de carregamento
+├─ android.keystore             # assinatura do APK  (local, NÃO versionado)
+├─ bundle.keystore              # assinatura do AAB  (local, NÃO versionado)
+├─ dist/                        # saída dos builds (APK/AAB)
+├─ .gitignore
+└─ README.md
 ```
+
+> Os arquivos `android*` ficam na raiz porque é de lá que o RAPT os lê. As
+> keystores são segredo de assinatura — mantenha backup e nunca commite.
+
 
 ## Regenerar a arte e o áudio
 
@@ -89,7 +99,7 @@ O RAPT cuida de gerar as densidades e o ícone estático para aparelhos sem íco
 
 ## Créditos
 
-- **Texto, arte procedural e som:** SaladaDeFlutter
+- **Texto, arte procedural e som:** Flutter
 - **Engine:** [Ren'Py 8.3.4](https://www.renpy.org/)
 
 ## Licença
