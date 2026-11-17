@@ -1,0 +1,11 @@
+# Ren'Py — arquivos gerados / de runtime
+game/cache/
+game/saves/
+*.rpyc
+*.rpyb
+
+# Logs e erros
+log.txt
+traceback.txt
+errors.txt
+traceback.txt.*
