@@ -187,6 +187,9 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
+    ## Não empacotar a saída de build (evita que APKs antigos entrem no APK).
+    build.classify('dist/**', None)
+
     ## To archive files, classify them as 'archive'.
 
     # build.classify('game/**.png', 'archive')
