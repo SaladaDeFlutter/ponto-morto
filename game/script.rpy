@@ -73,7 +73,7 @@ label start:
     pause 1.5
 
     centered "{cps=10}{size=+12}PONTO MORTO{/size}{/cps}\n\n{size=-4}{cps=18}Km 42 · BR-116 · 03:07{/cps}{/size}{w=1.5}{nw}"
-    centered "{cps=16}{i}Tem lugar que a gente num atravessa,\na gente fica nele.{/i}{/cps}{w=2.0}{nw}"
+    centered "{cps=16}{i}Na BR-116, quem passa não para.\nNo Km 42, quem para não passa.{/i}{/cps}{w=2.0}{nw}"
 
     scene bg posto
     show bg posto at respirar
@@ -85,9 +85,9 @@ label start:
 ##  CENA 1 — O POSTO
 ## ---------------------------------------------------------------------
 
-    "A BR-116 num tem fim, só tem posto."
+    "A BR-116 não tem fim, só tem posto."
     "O meu fica lá no Km 42."
-    "Cobertura velha de metal, duas bombas que quase num bombeiam, uma geladeira que faz mais barulho do que gela."
+    "Cobertura velha de metal, duas bombas que quase não bombeiam, uma geladeira que faz mais barulho do que gela."
     "Turno começa onze hora e só acaba às seis."
     "Já rodei tanto esse balcão que o corpo se ajeita sozinho: em pé, atrás do balcão, entre o caixa e a porta."
     "Sempre de frente pra estrada, nunca de costas."
@@ -107,14 +107,14 @@ label start:
     "Tem três ano que é segunda."
     "O rádio só pega chiado, e eu deixo ligado assim memo."
     "Chiado é melhor que silêncio."
-    "O café esfriou na garrafa lá pras onze e meia, e eu num esquento de novo não."
+    "O café esfriou na garrafa lá pras onze e meia, e eu não esquento de novo não."
     "Tem um bilhete preso no caixa, amarelado, a letra de quem escreveu com pressa:"
 
-    centered "{cps=22}Depois das três, num olhe pro rosto do cliente.\n\n— L.{/cps}"
+    centered "{cps=22}Depois das três, não olhe pro rosto do cliente.\n\n— L.{/cps}"
 
     marta "Superstição do Leandro."
     "Ele sempre foi disso, e eu sempre ri."
-    "Só que o Leandro num aparece desde o turno de terça."
+    "Só que o Leandro não aparece desde o turno de terça."
     "Foi terça.{w=0.5} Quase certeza que foi terça."
 
     menu:
@@ -137,14 +137,14 @@ label start:
 
     play sound "audio/campainha.ogg"
     show vulto at vulto_entra
-    "A porta abre e eu num ouvi carro nenhum chegando."
-    "Entra um homem molhado dos ombros pra baixo, e num chove há semana."
+    "A porta abre e eu não ouvi carro nenhum chegando."
+    "Entra um homem molhado dos ombros pra baixo, e não chove há semana."
     "Ele para do outro lado do balcão, a aba do boné tapando o rosto."
     "Um pingo escorre do queixo e cai no chão, faz um barulho pequeno, metálico."
 
     cliente "Boa noite."
     "A voz é baixa, sem pressa."
-    "Já ouvi essa voz em algum canto, só num sei onde."
+    "Já ouvi essa voz em algum canto, só não sei onde."
 
     cliente "Um maço de Derby.{w=0.6} E fósforo."
 
@@ -159,7 +159,7 @@ label start:
     "Ele conta devagar, como quem tá aprendendo."
     cliente "Cê já esteve aqui antes?"
     marta "Eu trabalho aqui."
-    cliente "Num é isso não.{w=0.6} Antes..."
+    cliente "Não é isso não.{w=0.6} Antes..."
 
     "Ele pega o maço, guarda o troco no bolso e vira as costas, abrindo a porta antes de eu falá qualquer coisa."
     play sound "audio/campainha.ogg"
@@ -195,14 +195,14 @@ label start:
     cliente "Boa noite, Marta."
     marta "Como é que cê sabe meu nome?"
     cliente "Tá no seu crachá."
-    "Eu num uso crachá."
+    "Eu não uso crachá."
 
     cliente "Um maço de Derby.{w=0.6} E fósforo."
     "As mesmas palavras, a mesma pausa, no mesmo lugar."
     "Pego outro maço, e é aí que eu vejo: o que eu vendi ainda tá no balcão, aberto, faltando um cigarro."
     "Mas eu vi ele guardá o maço no bolso."
     marta "Cê esqueceu o seu."
-    "Ele num responde, eu passo o código de novo e o visor pisca o mesmo número."
+    "Ele não responde, eu passo o código de novo e o visor pisca o mesmo número."
 
     ## A trilha morre aqui. O resto da conversa acontece em silêncio.
     stop music fadeout 0.5
@@ -210,7 +210,7 @@ label start:
     "O rádio chia, e por um instante tem uma voz no meio do chiado:"
     centered "{cps=30}{i}«…a polícia procura o motorista\nque não parou…»{/i}{/cps}{w=1.2}{nw}"
     "O chiado engole o resto da frase."
-    marta "Aqui num pega nada.{w=0.6} Nunca pegou."
+    marta "Aqui não pega nada.{w=0.6} Nunca pegou."
     "A mão dele continua estendida, esperando o troco."
 
     cliente "Quanto deu?"
@@ -235,7 +235,7 @@ label start:
             cliente "Cê sabe."
             "Ele inclina a cabeça, a aba do boné escondendo o rosto, como sempre escondeu."
         "Ficar em silêncio.":
-            "Num digo nada, e o silêncio dura o bastante pro zumbido da lâmpada virar uma frase."
+            "Não digo nada, e o silêncio dura o bastante pro zumbido da lâmpada virar uma frase."
 
     hide vulto
     with dissolve
@@ -261,11 +261,11 @@ label start:
 
     play sound "audio/coracao.ogg"
     show vulto at vulto_perto
-    "A porta fechou, mas ele num saiu."
-    "Tá do meu lado do balcão, e eu num vi ele se mexê."
+    "A porta fechou, mas ele não saiu."
+    "Tá do meu lado do balcão, e eu não vi ele se mexê."
     cliente "Falta pouco."
     cliente "Só falta cê olhá."
-    "A água que escorre dele num é água, é escura, brilha onde a luz bate, e cheira a ferro."
+    "A água que escorre dele não é água, é escura, brilha onde a luz bate, e cheira a ferro."
 
     menu:
         "Olhar o cartaz na parede.":
@@ -284,17 +284,17 @@ label start:
             marta "Leandro."
             cliente "Agora cê sabe o meu nome."
         "Olhar pro homem.":
-            "Num preciso do cartaz pra sabê, eu só num queria lembrá."
-            cliente "Sabe sim, só num quer."
+            "Não preciso do cartaz pra sabê, eu só não queria lembrá."
+            cliente "Sabe sim, só não quer."
 
     play sound "audio/coracao.ogg"
     "O relógio marca três e sete, o troco tá na minha mão, e as moedas tão quentes."
 
     menu:
-        "«Eu num parei.»" if verdade:
+        "«Eu não parei.»" if verdade:
             jump final_aceitar
         "«Desculpa.»" if not verdade:
-            cliente "Desculpa num é nome."
+            cliente "Desculpa não é nome."
             jump final_repetir
         "Continuar o turno. Não olhar.":
             jump final_repetir
@@ -311,14 +311,14 @@ label final_aceitar:
     $ quick_menu = False
     stop music fadeout 3.0
     "Abro a boca, e a palavra sai pequena... do tamanho de uma moeda."
-    marta "Eu num parei."
+    marta "Eu não parei."
 
     "O homem fica imóvel, e por um segundo acho que ele vai dizê alguma coisa."
     "Aí os ombros dele caem, como se tivesse segurando o mundo esse tempo todo e, enfim, pudesse soltá."
     cliente "Obrigado."
 
     if coragem >= 2:
-        "Minha voz saiu firme, sem tremê, e é a primeira coisa que eu digo em três ano que num é uma desculpa."
+        "Minha voz saiu firme, sem tremê, e é a primeira coisa que eu digo em três ano que não é uma desculpa."
 
     "Ele deixa o maço no balcão, o troco, o boné."
     hide vulto
@@ -334,7 +334,7 @@ label final_aceitar:
     with Dissolve(3.0)
 
     "A luz entra devagar, cinza, depois dourada, e a BR aparece do jeito que é: comprida, vazia, indiferente."
-    "Pego o telefone, tem tom, e faz três ano que eu num escuto um tom de discagem."
+    "Pego o telefone, tem tom, e faz três ano que eu não escuto um tom de discagem."
     marta "Alô?{w=0.6} Eu preciso confessá uma coisa."
 
     centered "{cps=14}{size=+6}O TROCO CERTO{/size}\n\n{size=-4}final 1 de 3{/size}{/cps}"
@@ -352,11 +352,11 @@ label final_repetir:
     stop music fadeout 2.0
     play music "audio/ambiente.ogg" fadein 2.0
 
-    "Num digo nada, pego outro maço, passo o código e devolvo o troco."
+    "Não digo nada, pego outro maço, passo o código e devolvo o troco."
     "Ele conta as moedas devagar, como quem tá aprendendo."
     cliente "Cê já esteve aqui antes?"
     marta "Já."
-    cliente "Num é isso não.{w=0.6} Antes."
+    cliente "Não é isso não.{w=0.6} Antes."
 
     show glitch_balcao
     play sound "audio/estatica.ogg"
@@ -434,7 +434,7 @@ label final_olhar:
     with Dissolve(2.0)
 
     "Tô na estrada, o farol tá quebrado, e tem alguém no acostamento."
-    "Eu num paro."
+    "Eu não paro."
     play sound "audio/coracao.ogg"
     "Eu nunca parei."
 

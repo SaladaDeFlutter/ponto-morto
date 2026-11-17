@@ -302,8 +302,6 @@ screen navigation():
 
         textbutton _("Carregar") action ShowMenu("load")
 
-        textbutton _("Preferências") action ShowMenu("preferences")
-
         if _in_replay:
 
             textbutton _("Encerrar replay") action EndReplay(confirm=True)
@@ -743,33 +741,6 @@ screen preferences():
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
-
-#begin language_picker
-
-                vbox:
-                    style_prefix "radio"
-                    label _("Idioma")
-
-                    textbutton "English" text_font "DejaVuSans.ttf" action Language(None)
-                    textbutton "Česky" text_font "DejaVuSans.ttf" action Language("czech")
-                    textbutton "Dansk" text_font "DejaVuSans.ttf" action Language("danish")
-                    textbutton "Français" text_font "DejaVuSans.ttf" action Language("french")
-                    textbutton "Italiano" text_font "DejaVuSans.ttf" action Language("italian")
-                    textbutton "Bahasa Melayu" text_font "DejaVuSans.ttf" action Language("malay")
-                    textbutton "Русский" text_font "DejaVuSans.ttf" action Language("russian")
-
-                vbox:
-                    style_prefix "radio"
-                    label _(" ")
-
-                    textbutton "Español" text_font "DejaVuSans.ttf" action Language("spanish")
-                    textbutton "Українська" text_font "DejaVuSans.ttf" action Language("ukrainian")
-                    textbutton "日本語" text_font "SourceHanSansLite.ttf" action Language("japanese")
-                    textbutton "한국어" text_font "SourceHanSansLite.ttf" action Language("korean")
-                    textbutton "简体中文" text_font "SourceHanSansLite.ttf" action Language("schinese")
-                    textbutton "繁體中文" text_font "SourceHanSansLite.ttf" action Language("tchinese")
-
-#end language_picker
 
             null height (4 * gui.pref_spacing)
 
